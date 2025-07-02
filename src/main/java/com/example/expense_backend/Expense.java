@@ -10,14 +10,15 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private BigDecimal price;
-    private String category;
+    private String name;
     private String description;
     private LocalDate date;
 
     public Expense() {
     }
 
-    // Getters & setters
+    // getters / setters
+
     public Long getId() {
         return id;
     }
@@ -30,12 +31,12 @@ public class Expense {
         this.price = price;
     }
 
-    public String getCategory() {
-        return category;
+    public String getName() {
+        return name;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
